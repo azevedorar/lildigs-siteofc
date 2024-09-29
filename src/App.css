@@ -19,6 +19,12 @@ body {
 }
 
 
-@import url('/Font/MeltedMonster.ttf'); /* Exemplo: URL da fonte do Google Fonts */
 
+
+@font-face {
+  font-family: 'MeltedMonster';
+  src: url('./Font/MeltedMonster.ttf') format('truetype'); /* Caminho relativo correto */
+  font-weight: normal;
+  font-style: normal;
+}
 
