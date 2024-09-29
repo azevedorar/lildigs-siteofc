@@ -1,0 +1,92 @@
+.navbar {
+    background-color: #1E1E1E;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .navbar-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-family: "MeltedMonster", cursive !important; /* Adicionando !important */
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.767);
+    margin: 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  
+  .navbar-title a {
+    color: white;
+    text-decoration: none;
+    font-family: "MeltedMonster", cursive ;
+  
+  }
+  
+  .navbar-title a:hover {
+    color: red;
+  }
+  .navbar-title.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Espaço entre os links */
+  }
+  
+  .left-links {
+    display: flex; /* Alinha os links à esquerda */
+  }
+  
+  .right-links {
+    display: flex; /* Alinha os links à direita */
+  }
+  
+  .navbar-links li {
+    transition: color 0.3s;
+    font-size: 30px;
+  }
+  
+  .navbar-links a {
+    color: #fff; /* Corrigido para uma cor válida */
+    text-decoration: none;
+  }
+  
+  .navbar-links a:hover {
+    color: #cb1414c7;
+    text-decoration: none;
+  }
+  
+  /* Novas regras para responsividade */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column; /* Alinha os itens verticalmente */
+      align-items: center;
+    }
+  
+    .navbar-links {
+      flex-direction: column; /* Para mobile, os links ficam em coluna */
+      width: 100%; /* Para que ocupe toda a largura */
+    }
+  
+    .navbar-links li {
+      margin: 10px 0; /* Adiciona espaço entre os itens */
+      font-size: 20px; /* Ajusta o tamanho da fonte para mobile */
+    }
+  
+    .navbar-title {
+      font-size: 50px; /* Ajuste o tamanho da fonte para mobile */
+    }
+  }

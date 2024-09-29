@@ -1,0 +1,46 @@
+@media (max-width: 768px) {
+    .navbar-items {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        display: none; /* Esconde inicialmente */
+    }
+
+    .navbar-toggle {
+        display: block; /* Mostra o botão de menu */
+        cursor: pointer;
+    }
+
+    .navbar-items.is-active {
+        display: flex; /* Mostra os itens do menu quando ativo */
+    }
+}
+
+/* Novo código para centralizar e alinhar */
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar-container {
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar-links {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+      padding: 0;
+    }
+
+    .navbar-links li {
+      font-size: 20px; /* Diminuir o tamanho da fonte para mobile */
+      margin: 5px 0;
+    }
+
+    .navbar-title {
+      font-size: 50px; /* Ajuste o tamanho da fonte para mobile */
+      margin: 0;
+    }
+}

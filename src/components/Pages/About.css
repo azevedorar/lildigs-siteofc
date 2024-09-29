@@ -1,0 +1,46 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #00000021;
+    text-align: center; /* Centraliza todo o texto dentro do contêiner */
+  }
+  
+  .page-title {
+    font-size: 3rem; /* Tamanho para o título da página */
+    text-shadow: 2px 2px 4px rgba(235, 224, 224, 0.5);
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-section {
+    margin-bottom: 2rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem; /* Tamanho aumentado para os subtítulos */
+    margin-top: 2rem;
+  }
+  
+  .pt-title {
+    font-size: 2.2rem; /* Tamanho para o subtítulo em português */
+    color: #ffffff; /* Cor destaque Português */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+  }
+  
+  .en-title {
+    font-size: 2.2rem; /* Tamanho para o subtítulo em inglês */
+    color: #f39c12; /* Cor destaque Inglês */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+  }
+  
+  .about-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #FFF; /* Alterado para garantir boa visibilidade no fundo escuro */
+    text-align: center; /* Centraliza o texto dos parágrafos */
+  }
+
+  

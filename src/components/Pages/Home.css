@@ -1,0 +1,69 @@
+html, body {
+    margin: 0; /* Remove margens do HTML e body */
+    padding: 0; /* Remove preenchimento do body */
+    height: 100%;
+    overflow: hidden; /* Esconde barras de rolagem */
+  }
+
+.home-container {
+    position: relative;
+    height: 100vh; /* Preencher toda a altura da janela */
+    width: 100vw; /* Preencher toda a largura da janela */
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%; /* Manter largura 100% */
+    height: auto; /* Manter altura 100% */
+    object-fit: cover; /* Faz o vídeo cobrir todo o espaço sem distorcer */
+    opacity: 0.2; /* Transparência do vídeo */
+    transform: translate(-50%, -50%); /* Centraliza o vídeo */
+    z-index: 1; /* Coloca o vídeo atrás */
+}
+
+.overlay {
+    position: absolute; /* Para que o conteúdo fique sobre o vídeo */
+    top: 50%; /* Manter na posição central verticalmente */
+    left: 50%; /* Manter na posição central horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    z-index: 2; /* Certifique-se de que o z-index é maior que o do vídeo */
+    color: #E0E0E0; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Adiciona espaçamento */
+}
+
+/* animação respiração */
+@keyframes breathe {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+}
+
+
+.overlay h1 {
+    font-size: 48px; /* Tamanho do título */
+    margin: 0; /* Remove margem */
+    transition: color 0.3s ease;
+}
+
+.overlay h1:hover {
+    color: #FFFFFF;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7  );
+    animation: breathe 2s ease-in-out infinite;
+}
+
+.overlay p {
+    font-size: 24px; /* Tamanho do parágrafo */
+    margin: 0; /* Remove margem */
+}
+
+.navbar {
+    position: relative; /* Garante que a navbar fique acima do vídeo */
+    z-index: 3; /* Coloca a navbar acima do vídeo e overlay */
+    background-color: rgba(0, 0, 0, 0.7); /* Adiciona fundo escuro com leve transparência */
+    padding: 10px; /* Ajuste o espaçamento da navbar */
+    color: white; /* Cor do texto da navbar */
+}

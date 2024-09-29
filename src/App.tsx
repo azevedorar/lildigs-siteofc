@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
-function App() {
-  const [count, setCount] = useState(0)
+// NAVBAR
+import Navbar from './components/Navbar';
+import Home from './components/Pages/Home';
+import Contact from './components/Pages/Contact';
+import About from './components/Pages/About';
+import './components/responsive.css';
+import Footer from './components/Footer'; // Importação do Footer
+
+const App: React.FC = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      {!isHomePage && <Footer />} {/* Exibe o rodapé apenas se não estiver na Home */}
     </>
-  )
-}
+  );
+};
 
-export default App
+const AppWrapper: React.FC = () => (
+  <Router>
+    <App />
+  </Router>
+);
+
+export default AppWrapper;
