@@ -68,3 +68,18 @@ html, body {
     padding: 10px; /* Ajuste o espaçamento da navbar */
     color: white; /* Cor do texto da navbar */
 }
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    .video-container {
+        height: 100vh; /* Preenche toda a altura da tela */
+        overflow: hidden; /* Oculta partes que saem do contêiner */
+    }
+
+    .video-container video {
+        width: auto; /* Mantém a largura do vídeo */
+        height: 100%; /* Define a altura do vídeo para preencher o contêiner */
+        object-fit: cover; /* Mantém a proporção do vídeo sem distorcer */
+    }
+}
