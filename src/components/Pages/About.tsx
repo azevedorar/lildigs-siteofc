@@ -18,7 +18,7 @@ const About: React.FC = () => {
 
       <h2 className="section-title en-title">About</h2> {/* Corrigido para exibir "About" */}
       <p className="about-text">
-        Lil Digs, a 25-year-old trap artist from the West Zone of São Paulo, Brazil, is bringing a fresh vibe to the underground scene. Making music for a year, he’s been dropping tracks on SoundCloud that blend hard-hitting beats with emotional, introspective lyrics. Lil Digs is carving his own lane in trap, offering a sound that resonates both for its authenticity and its depth of feeling.
+    
       </p> {/* Adicionado conteúdo em inglês */}
     </div>
   );
