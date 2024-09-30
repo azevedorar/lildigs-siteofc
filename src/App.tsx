@@ -27,7 +27,7 @@ const App: React.FC = () => {
 };
 
 const AppWrapper: React.FC = () => (
-  <Router>
+  <Router basename='/lildigs-siteofc/'>
     <App />
   </Router>
 );
