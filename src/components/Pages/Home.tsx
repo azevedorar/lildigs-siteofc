@@ -5,7 +5,7 @@ const Home: React.FC = () => {
   return (
     <div className='home-container'>
       <video autoPlay muted loop className='background-video'>
-      <source src='/lildigs-siteofc/public/video/clip.mp4' type='video/mp4' />
+      <source src='/lildigs-siteofc/video/clip.mp4' type='video/mp4' />
         Seu navegador não suporta vídeos
       </video>
 
