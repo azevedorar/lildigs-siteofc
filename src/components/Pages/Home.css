@@ -6,7 +6,7 @@ html, body {
   }
 
 .home-container {
-    position: relative;
+    position: inherit;
     height: 100vh; /* Preencher toda a altura da janela */
     width: 100vw; /* Preencher toda a largura da janela */
 }
