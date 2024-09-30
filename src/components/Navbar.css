@@ -65,7 +65,11 @@
     color: #fff; /* Corrigido para uma cor válida */
     text-decoration: none;
   }
-  
+  .navbar-title a.active,
+.navbar-links a.active {
+  color: red; /* Mesma cor do hover */
+}
+
   .navbar-links a:hover {
     color: #cb1414c7;
     text-decoration: none;

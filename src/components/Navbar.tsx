@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css'; // Importe o CSS
 
 const Navbar: React.FC = () => {
@@ -22,17 +22,17 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
   <div className="navbar-container">
     <ul className='navbar-links left-links'>
-      {/* <li><Link to="/">Home</Link></li> */}
-      {/* <li><Link to="/musics">Musics</Link></li> */}
-      <li><Link to="/contact">Contato</Link></li>
+      <li>
+        <NavLink 
+        to="/contact" className={({isActive}) => isActive ? 'active' : ''}>Contato</NavLink></li>
 
     </ul>
 
-    <h1 className="navbar-title"> <Link to="/">LILDIGS</Link></h1>
+    <h1 className="navbar-title"> <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>LILDIGS</NavLink></h1>
 
     <ul className="navbar-links right-links">
       
-    <li><Link to="/about">Sobre</Link></li>
+    <li><NavLink to="/about"className={({ isActive }) => isActive ? 'active' : ''}>Sobre</NavLink></li>
     </ul>
   </div>
 </nav>

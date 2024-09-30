@@ -10,7 +10,7 @@ const Home: React.FC = () => {
       </video>
 
       <div className='overlay'>
-      <h1>ESSENCE </h1>
+      <h1>ESSENCE</h1>
       <p>Em breve...</p>
       </div>
       
