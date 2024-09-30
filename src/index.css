@@ -1,3 +1,6 @@
+
+
+
 @font-face {
   font-family: 'MeltedMonster';
   src: url('/lildigs-siteofc/Font/MeltedMonster.ttf') format('truetype');
@@ -19,6 +22,6 @@ body {
 }
 
 
-@import url('/Font/MeltedMonster.ttf'); /* Exemplo: URL da fonte do Google Fonts */
+/* Exemplo: URL da fonte do Google Fonts */
 
 
