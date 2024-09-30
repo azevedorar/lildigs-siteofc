@@ -48,17 +48,19 @@ html, body {
     font-size: 48px; /* Tamanho do título */
     margin: 0; /* Remove margem */
     transition: color 0.3s ease;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7  );
 }
 
 .overlay h1:hover {
     color: #FFFFFF;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7  );
+    text-shadow: 0 0 10px rgba(241, 88, 88, 0.493);
     animation: breathe 2s ease-in-out infinite;
 }
 
 .overlay p {
     font-size: 24px; /* Tamanho do parágrafo */
     margin: 0; /* Remove margem */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7  );
 }
 
 .navbar {

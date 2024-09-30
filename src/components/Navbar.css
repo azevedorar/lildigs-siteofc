@@ -74,6 +74,17 @@
     color: #cb1414c7;
     text-decoration: none;
   }
+
+/* Estilo para 'Contato' */
+.navbar-links a[href="/contact"] {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Estilo para 'Sobre' */
+.navbar-links a[href="/about"] {
+  font-family: 'Montserrat', sans-serif;
+}
+
   
   /* Novas regras para responsividade */
   @media (max-width: 768px) {
