@@ -9,6 +9,7 @@ html, body {
     position: inherit;
     height: 100vh; /* Preencher toda a altura da janela */
     width: 100vw; /* Preencher toda a largura da janela */
+    overflow: hidden;
 }
 
 .background-video {

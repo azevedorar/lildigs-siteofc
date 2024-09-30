@@ -1,6 +1,8 @@
 .navbar {
     background-color: #1E1E1E;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    
   }
   
   .navbar-container {
@@ -15,7 +17,7 @@
     flex-grow: 1;
     text-align: center;
     font-size: 60px;
-    letter-spacing: 2px;
+    letter-spacing: 16px;
     font-family: "MeltedMonster", cursive !important; /* Adicionando !important */
     text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.767);
     margin: 0;
@@ -78,6 +80,7 @@
   
     .navbar-links {
       flex-direction: column; /* Para mobile, os links ficam em coluna */
+      align-items: center;
       width: 100%; /* Para que ocupe toda a largura */
     }
   
@@ -87,6 +90,9 @@
     }
   
     .navbar-title {
-      font-size: 50px; /* Ajuste o tamanho da fonte para mobile */
+      font-size: 40px; /* Ajuste o tamanho da fonte para mobile */
+      padding: 10px 0;
     }
+
+
   }

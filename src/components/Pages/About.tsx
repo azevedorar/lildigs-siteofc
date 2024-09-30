@@ -16,10 +16,6 @@ const About: React.FC = () => {
         um som que conecta tanto pela autenticidade quanto pela sensibilidade.
       </p>
 
-      <h2 className="section-title en-title">About</h2> {/* Corrigido para exibir "About" */}
-      <p className="about-text">
-    
-      </p> {/* Adicionado conteúdo em inglês */}
     </div>
   );
 };

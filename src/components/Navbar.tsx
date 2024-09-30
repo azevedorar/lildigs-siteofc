@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
     <ul className='navbar-links left-links'>
       {/* <li><Link to="/">Home</Link></li> */}
       {/* <li><Link to="/musics">Musics</Link></li> */}
-      <li><Link to="/contact">Contact</Link></li>
+      <li><Link to="/contact">Contato</Link></li>
 
     </ul>
 
@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
 
     <ul className="navbar-links right-links">
       
-    <li><Link to="/about">About</Link></li>
+    <li><Link to="/about">Sobre</Link></li>
     </ul>
   </div>
 </nav>

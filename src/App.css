@@ -1,11 +1,5 @@
 @import url('/lildigs-siteofc/public/Font/MeltedMonster.ttf'); 
 
-@font-face {
-  font-family: 'MeltedMonster';
-  src: url('/public/Font/MeltedMonster.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 
 body {
@@ -13,12 +7,6 @@ body {
   color: #E0E0E0;
   font-family: 'Cinzel', serif; /* Aplicando a fonte gótica */
 
-}
-
-.navbar {
-  background-color: #1E1E1E;
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 
