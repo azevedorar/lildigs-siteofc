@@ -5,8 +5,8 @@ const Home: React.FC = () => {
   return (
     <div className='home-container'>
       <video autoPlay muted loop className='background-video'>
-      <source src='/video/clip.mp4' type='video/mp4' />
-        Seu navegador não suporta vídeos
+      <source src='/lildigs-siteofc/video/clip.mp4' type='video/mp4' />
+      Seu navegador não suporta vídeos
       </video>
 
       <div className='overlay'>
